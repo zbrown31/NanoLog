@@ -8,7 +8,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 # pre-requisites
 find_package(Threads REQUIRED)
-find_package(RT REQUIRED)
 
 file(GLOB HEADERS ${PROJECT_SOURCE_DIR}/runtime/*.h)
 file(GLOB SOURCES ${PROJECT_SOURCE_DIR}/runtime/*.cc ${PROJECT_SOURCE_DIR}/generated/GeneratedCode.cc)
