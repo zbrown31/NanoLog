@@ -1,0 +1,17 @@
+./runtime/Cycles.o: runtime/Cycles.cc runtime/Cycles.h runtime/Portability.h \
+ runtime/Initialize.h runtime/Util.h
+./runtime/NanoLog.o: runtime/NanoLog.cc runtime/NanoLog.h runtime/RuntimeLogger.h \
+ runtime/Config.h runtime/Common.h runtime/Fence.h runtime/Log.h \
+ runtime/Cycles.h runtime/Portability.h runtime/Packer.h \
+ runtime/TestUtil.h runtime/Util.h
+./runtime/Util.o: runtime/Util.cc runtime/Util.h runtime/Portability.h
+./runtime/Log.o: runtime/Log.cc runtime/Log.h runtime/Config.h runtime/Common.h \
+ runtime/Cycles.h runtime/Portability.h runtime/Packer.h \
+ runtime/TestUtil.h runtime/Util.h runtime/GeneratedCode.h \
+ runtime/NanoLog.h runtime/RuntimeLogger.h runtime/Fence.h
+./runtime/RuntimeLogger.o: runtime/RuntimeLogger.cc runtime/Cycles.h \
+ runtime/Portability.h runtime/RuntimeLogger.h runtime/Config.h \
+ runtime/Common.h runtime/Fence.h runtime/Log.h runtime/Packer.h \
+ runtime/TestUtil.h runtime/Util.h runtime/NanoLog.h
+./runtime/TimeTrace.o: runtime/TimeTrace.cc runtime/TimeTrace.h runtime/Cycles.h \
+ runtime/Portability.h
